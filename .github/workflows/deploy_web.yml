@@ -9,6 +9,8 @@ jobs:
   build_web:
     name: Deploy Flutter Web to GitHub Pages
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - name: Github 레포지토리 세팅
         uses: actions/checkout@v4
